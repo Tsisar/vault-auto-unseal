@@ -1,0 +1,40 @@
+# --- Terraform ---
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform-provider-*
+
+# --- Sensitive files ---
+# (наприклад, локальні скрипти або тести)
+*.log
+*.bak
+*.tmp
+*.swp
+
+# --- OS generated ---
+.DS_Store
+Thumbs.db
+
+# --- JetBrains IDEs (Studio, GoLand, IntelliJ IDEA, WebStorm etc.) ---
+.idea/
+*.iml
+*.iws
+out/
+
+# --- VS Code ---
+.vscode/
+
+# --- Misc ---
+# (можна додати ще специфічні каталоги якщо є, наприклад локальні output-и)
+local.tfvars
+.env
+*.secret
+*.key
+*.pem
